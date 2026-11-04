@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Our Little World</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+<section id="lock" class="lock-screen">
+  <div class="envelope">
+    <div class="tiny">A LITTLE WORLD, JUST FOR US</div>
+    <div class="seal">♥</div>
+    <h1>Our Little World</h1>
+    <p class="to">For My Dear Shreeshu</p>
+    <p class="hint">A tiny letter, sealed with love.</p>
+    <form id="unlockForm"><input id="passcode" inputmode="numeric" type="password" maxlength="6" placeholder="Enter our code" aria-label="Passcode"><button type="submit">Open our letter</button><p id="error" aria-live="polite"></p></form>
+  </div>
+</section>
+<main id="world" hidden>
+  <header><p class="eyebrow">A COLLECTION OF LITTLE FOREVERS</p><h1>Our Little World <span>♥</span></h1><p class="subtitle">Every little moment, a part of us.</p></header>
+  <div class="music-row"><button id="musicToggle" type="button">♫ Play our song</button><audio id="bgMusic" src="assets/background.mp3" loop preload="metadata"></audio></div>
+  <section class="cinema">
+    <div id="stage" class="stage"></div>
+    <div class="controls"><button id="prev" aria-label="Previous memory">‹</button><span id="counter">01 / 01</span><button id="next" aria-label="Next memory">›</button></div>
+    <div class="progress"><span id="progress"></span></div>
+    <p class="tap-note">Take your time with every memory.</p>
+  </section>
+  <section class="letter"><p class="eyebrow">FROM MY HEART TO YOURS</p><h2>My Dear Shreeshu</h2><div id="message" class="message"></div></section>
+  <footer><p>To us, and to everything still to come ❤️</p><span>forever, in our little world</span></footer>
+</main>
+<script src="script.js"></script>
+</body></html>
